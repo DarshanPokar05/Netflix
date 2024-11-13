@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackflix Clone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Hackflix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+            <button class="sign-in-btn">Sign In</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Watch Movies and TV Shows</h2>
+            <p>Enjoy unlimited access to your favorite movies and shows.</p>
+            <a href="#" class="cta-btn">Watch Now</a>
+        </div>
+    </section>
+
+    <section class="movie-list">
+        <h2>Popular on Hackflix</h2>
+        <div class="movies">
+            <img src="avenger-endgame.jpg" alt="Movie 1" onclick="playMovie('Black Panther (2018).mkv')">
+            <img src="HarryPotter.webp" alt="Movie 2">
+            <img src="pirates.jpg" alt="Movie 3">
+            <img src="f&fcollection.jpg" alt="Movie 4">
+            <img src="transformers.jpg" alt="Movie 5">
+            <img src="spider.jpg" alt="Movie 6">
+        </div>
+        <h2 style="margin-top: 20px ;">Movies Collection</h2>
+        <div class="moviescollection">
+            <img src="Piratescollection.avif" alt="Movie 1">
+        </div>
+    </section>
+    <section class="video-player" style="margin: 20px;">
+        <video id="videoPlayer" width="800" height="450" controls>
+            <source src="" type="video/mkv">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hackflix Clone. All rights reserved.</p>
+            <p>FAQs | Terms of Service | Contact Us</p>
+        </div>
+    </footer>
+    <script src="./netflix.js"></script>
+</body>
+</html>
